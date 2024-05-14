@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="/src/css/dark.css" id="theme"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<script type="module" src="/src/ts/main.ts" defer></script>
+	<script type="module" src="/src/ts/import-html.ts" defer></script>
+</head>
+
+<body>
+	<div id="background">
+		<div data-tauri-drag-region class="titlebar">
+			<div data-tauri-drag-region id="titletext">
+				<img id="window-icon" src="./src-tauri/icons/icon.png" height="25"/>
+			</div>
+			<button id="view-button">View</button>
+			<div data-tauri-drag-region id="item-holder">
+				<div id="button-holder">	
+					<button class="titlebar-button" id="titlebar-minimize">
+						<img src="https://api.iconify.design/mdi:window-minimize.svg" alt="minimize" style="filter: invert(44%) sepia(0%) saturate(0%) hue-rotate(192deg) brightness(95%) contrast(83%);"/>
+					</button>
+					<button class="titlebar-button" id="titlebar-maximize">
+						<img src="./src/images/maximize.png" width="18" alt="maximize" style="filter: invert(44%) sepia(0%) saturate(0%) hue-rotate(192deg) brightness(95%) contrast(83%);"/>
+					</button>
+					<button class="titlebar-button" id="titlebar-close">
+						<img src="https://api.iconify.design/mdi:close.svg" alt="close" style="filter: invert(44%) sepia(0%) saturate(0%) hue-rotate(192deg) brightness(95%) contrast(83%);"/>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="sidebar">
+			
+		</div>
+		
+		<div id="text-area">
+			<div id="file-name-holder">
+
+			</div>
+			<div id="file-content-holder">
+				
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
